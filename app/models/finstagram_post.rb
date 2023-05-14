@@ -1,8 +1,8 @@
 class FinstagramPost < ActiveRecord::Base
 
     belongs_to :user
-    belongs_to :comments
-    belongs_to :likes
+    has_many :comments
+    has_many :likes
 
     validates_presence_of :user
 
